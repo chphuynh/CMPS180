@@ -1,0 +1,40 @@
+INSERT INTO Persons
+VALUES (564285258, 'Joseph Crill', 1200, 1, 15000);
+
+INSERT INTO Ownerships
+VALUES (100, 1700, CURRENT_DATE, 2222);
+
+INSERT INTO Tenants
+VALUES (1500, 1, 789235543, DATE '2014-02-01', DATE '2017-05-01', 4111, DATE '2017-02-01', FALSE);
+
+UPDATE Ownerships
+SET PropertyTax = 1200
+WHERE HouseID = 800;
+
+UPDATE Ownerships
+SET PropertyTax = -500
+WHERE HouseID = 500;
+
+UPDATE Tenants
+SET Rent = 2555
+WHERE LeaseTenantSSN = 695406970;
+
+UPDATE Tenants
+SET Rent = -332
+WHERE LeaseTenantSSN = 641078001;
+
+UPDATE Tenants
+SET LeaseExpirationDate = CURRENT_DATE
+WHERE LeaseTenantSSN = 664067824;
+
+UPDATE Tenants
+SET LeaseExpirationDate = DATE '1999-01-22'
+WHERE LeaseTenantSSN = 788930793;
+
+UPDATE Tenants
+SET LastRentPaidDate = CURRENT_DATE, RentOverdue = FALSE
+WHERE LeaseTenantSSN = 743951210;
+
+UPDATE Tenants
+SET LastRentPaidDate = CURRENT_DATE, RentOverdue = TRUE
+WHERE LeaseTenantSSN = 723069206;

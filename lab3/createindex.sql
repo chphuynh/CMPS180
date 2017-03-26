@@ -1,0 +1,1 @@
+CREATE INDEX HAIndex ON Persons(HouseId, ApartmentNumber);
